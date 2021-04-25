@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.min.css" />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <!-- header -->
+      <header class="header">
+        @@include('rs-menu.html')
+        <div class="container">
+          <div class="header__inner">
+            <nav class="menu">
+              <ul class="menu__list">
+                <li class="menu__list-item">
+                  <a class="menu__list-link" href="./about.html">About</a>
+                </li>
+                <li class="menu__list-item menu__list-item--active">
+                  <a class="menu__list-link" href="./gallery.html">Gallery</a>
+                </li>
+              </ul>
+            </nav>
+
+            <a class="logo" href="./index.html">
+              <img class="logo__img" src="./img/icons/logo.svg" alt="logo" />
+            </a>
+
+            <nav class="menu">
+              <ul class="menu__list">
+                <il class="menu__list-item">
+                  <a class="menu__list-link" href="./blog.html">Blog</a>
+                </il>
+                <il class="menu__list-item">
+                  <a class="menu__list-link" href="./contact.html">Contact</a>
+                </il>
+              </ul>
+            </nav>
+            <button class="header__btn-menu">
+              <img src="./img/icons/icon_rs-menu.svg" alt="icon menu" />
+            </button>
+          </div>
+        </div>
+      </header>
+      <main class="main">
+        <!--breadcrumbs  -->
+        <div class="breadcrumbs">
+          <div class="container">
+            <ul class="breadcrumbs__list">
+              <li class="breadcrumbs__item">
+                <a class="breadcrumbs__link" href="index.html">Home</a>
+              </li>
+              <li class="breadcrumbs__item">
+                <span class="breadcrumbs__link">Gallery</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Gallery -->
+        <div class="gallery">
+          <div class="container-fluid">
+            <div class="gallery__buttons">
+              <button class="gallery__btn" type="button" data-filter=".bedroom">
+                Bedroom furniture
+              </button>
+              <button class="gallery__btn" type="button" data-filter=".living">
+                Living room furniture
+              </button>
+              <button class="gallery__btn" type="button" data-filter=".office">
+                Office furniture
+              </button>
+              <button class="gallery__btn" type="button" data-filter=".dining">
+                Dining room futniture
+              </button>
+              <button class="gallery__btn" type="button" data-filter=".chair">
+                Chair
+              </button>
+            </div>
+
+            <div class="gallery__inner">
+              <div class="gallery__items mix bedroom">
+                <img
+                  class="gallery__item"
+                  src="./img/content/gallery/placeholder1.jpg"
+                  alt="image"
+                />
+                <img
+                  class="gallery__item"
+                  src="./img/content/gallery/placeholder2.jpg"
+                  alt="image"
+                />
+                <img
+                  class="gallery__item"
+                  src="./img/content/gallery/placeholder3.jpg"
+                  alt="image"
+                />
+                <img
+                  class="gallery__item"
+                  src="./img/content/gallery/placeholder4.jpg"
+                  alt="image"
+                />
+                <img
+                  class="gallery__item"
+                  src="./img/content/gallery/placeholder5.jpg"
+                  alt="image"
+                />
+              </div>
+            </div>
+
+            <div class="gallery__inner">
+              <div class="gallery__items--mirror mix bedroom">
+                <img
+                  class="gallery__item--mirror"
+                  src="./img/content/gallery/placeholder1.jpg"
+                  alt="image"
+                />
+                <img
+                  class="gallery__item"
+                  src="./img/content/gallery/placeholder2.jpg"
+                  alt="image"
+                />
+                <img
+                  class="gallery__item"
+                  src="./img/content/gallery/placeholder3.jpg"
+                  alt="image"
+                />
+                <img
+                  class="gallery__item"
+                  src="./img/content/gallery/placeholder4.jpg"
+                  alt="image"
+                />
+                <img
+                  class="gallery__item"
+                  src="./img/content/gallery/placeholder5.jpg"
+                  alt="image"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <!-- footer -->
+      @@include('_footer.html')
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>

@@ -12,16 +12,22 @@ let path = {
   },
   app: {
     html: [source_folder + '/*.html', '!' + source_folder + '/_*.html'],
-    css: source_folder + '/scss/style.scss',
-    js: source_folder + '/js/script.js',
-    img: source_folder + '/images/**/*.{jpg,png,svg,gif,ico,webp}',
+    css: [
+      source_folder + '/scss/style.scss',
+    
+    ],
+    js: [
+      source_folder + '/js/script.js',
+   
+    ],
+    img: source_folder + '/img/**/*.{jpg,png,svg,gif,ico,webp}',
     fonts: source_folder + '/fonts/*.ttf',
   },
   watch: {
     html: source_folder + '/**/*.html',
     css: source_folder + '/scss/**/*.scss',
-    js: source_folder + '/js/script/**/*.js',
-    img: source_folder + '/images/**/*.{jpg,png,svg,gif,ico,webp}',
+    js: source_folder + '/js/**/*.js',
+    img: source_folder + '/img/**/*.{jpg,png,svg,gif,ico,webp}',
   },
   clean: './' + project_folder + '/',
 };
@@ -38,10 +44,11 @@ let { src, dest } = require('gulp'),
   cleanCSS = require('gulp-clean-css'),
   rename = require('gulp-rename'),
   uglify = require('gulp-uglify-es').default,
-  babel = require('gulp-babel'),
   imagemin = require('gulp-imagemin'),
   ttf2woff2 = require('gulp-ttf2woff2'),
-  ttf2woff = require('gulp-ttf2woff');
+  ttf2woff = require('gulp-ttf2woff'),
+  autoprefixer = require('gulp-autoprefixer'),
+  babel = require('gulp-babel');
 
 // Gulp functions
 
@@ -66,6 +73,7 @@ function styles() {
   return src(path.app.css)
     .pipe(scss({ outputStyle: 'compressed' }))
     .pipe(group_media())
+    .pipe(autoprefixer())
     .pipe(dest(path.build.css))
     .pipe(cleanCSS())
     .pipe(
@@ -76,14 +84,13 @@ function styles() {
     .pipe(dest(path.build.css))
     .pipe(browsersync.stream());
 }
+
 function js() {
   return src(path.app.js)
     .pipe(fileinclude())
-    .pipe(
-      babel({
-        presets: ['@babel/env'],
-      })
-    )
+    .pipe(babel({
+      presets: ["@babel/preset-env"]
+    }))
     .pipe(dest(path.build.js))
     .pipe(uglify())
     .pipe(
@@ -91,6 +98,7 @@ function js() {
         extname: '.min.js',
       })
     )
+
     .pipe(dest(path.build.js))
     .pipe(browsersync.stream());
 }
@@ -163,6 +171,7 @@ let build = gulp.series(
   gulp.parallel(html, styles, js, img, fonts),
   fontsStyle
 );
+
 let watch = gulp.parallel(build, watchFiles, browserSync);
 
 exports.fontsStyle = fontsStyle;

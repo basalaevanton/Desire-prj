@@ -1,0 +1,129 @@
+.aside {
+  width: 350px;
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+  }
+  &__search {
+    display: flex;
+    position: relative;
+    padding-bottom: 45px;
+  }
+  &__search-input {
+    width: 100%;
+    height: 40px;
+    background-color: transparent;
+    border: 1px solid #dfdfdf;
+    border-radius: 21px;
+
+    opacity: 0.7;
+    outline: none;
+    padding: 6px 45px 6px 18px;
+
+    ::placeholder {
+      color: #a1a1a1;
+      padding: 5px 10px 10px 15px;
+
+      font-size: 14px;
+    }
+  }
+
+  &__search-btn {
+    position: absolute;
+    top: 10px;
+    right: 13px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    outline: none;
+  }
+
+  &__title {
+    @extend %title-font;
+    font-size: 16px;
+    line-height: 23px;
+
+    padding-bottom: 14px;
+  }
+  &__category {
+    padding-bottom: 35px;
+  }
+  &__category-item {
+    padding-bottom: 10px;
+  }
+
+  &__category-link {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 27px;
+    color: #5a5a5a;
+  }
+
+  &__posts {
+    padding-bottom: 50px;
+  }
+  &__posts-item {
+    padding-top: 10px;
+  }
+
+  &__posts-link {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 27px;
+    color: #5a5a5a;
+  }
+  &__posts-author,
+  &__posts-date {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 28px;
+    color: #a1a1a1;
+  }
+
+  &__tags {
+    padding-bottom: 60px;
+  }
+
+  &__tags-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__tags-item {
+    padding-right: 10px;
+    padding-bottom: 10px;
+  }
+  &__tags-btn {
+    height: 30px;
+
+    padding: 0 10px 0 10px;
+    background-color: transparent;
+
+    border: 1px solid rgba(#454647, 0.5);
+    border-radius: 14px;
+
+    outline: none;
+    cursor: pointer;
+
+    font-weight: 600;
+    font-size: 14px;
+    text-align: center;
+    color: #8f8d8d;
+  }
+
+  &__social {
+    display: flex;
+    padding-bottom: 50px;
+    align-items: center;
+  }
+  &__social-link {
+    padding-right: 20px;
+    
+  }
+}

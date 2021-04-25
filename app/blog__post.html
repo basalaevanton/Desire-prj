@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.min.css" />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <!-- header -->
+      <!-- header -->
+      <header class="header">
+        @@include('rs-menu.html')
+        <div class="container">
+          <div class="header__inner">
+            <nav class="menu">
+              <ul class="menu__list">
+                <li class="menu__list-item">
+                  <a class="menu__list-link" href="./about.html">About</a>
+                </li>
+                <li class="menu__list-item">
+                  <a class="menu__list-link" href="./gallery.html">Gallery</a>
+                </li>
+              </ul>
+            </nav>
+
+            <a class="logo" href="./index.html">
+              <img class="logo__img" src="./img/icons/logo.svg" alt="logo" />
+            </a>
+
+            <nav class="menu">
+              <ul class="menu__list">
+                <li class="menu__list-item menu__list-item--active">
+                  <a class="menu__list-link" href="./blog.html">Blog</a>
+                </li>
+                <li class="menu__list-item">
+                  <a class="menu__list-link" href="./contact.html">Contact</a>
+                </li>
+              </ul>
+            </nav>
+            <button class="header__btn-menu">
+              <img src="./img/icons/icon_rs-menu.svg" alt="icon menu" />
+            </button>
+          </div>
+        </div>
+      </header>
+      <main class="main">
+        <!--breadcrumbs  -->
+        <div class="breadcrumbs">
+          <div class="container">
+            <ul class="breadcrumbs__list">
+              <li class="breadcrumbs__item">
+                <a class="breadcrumbs__link" href="index.html">Home</a>
+              </li>
+              <li class="breadcrumbs__item">
+                <a class="breadcrumbs__link" href="blog.html">Blog</a>
+              </li>
+              <li class="breadcrumbs__item">
+                <span class="breadcrumbs__link">Single Post</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- blog -->
+        <section class="blog">
+          <div class="container">
+            <div class="blog__inner">
+              <div class="blog__content">
+                <!-- blog post -->
+                <article class="blog__post">
+                  <img
+                    class="post__img"
+                    src="./img/content/blog/img.jpg"
+                    alt="room"
+                  />
+
+                  <p class="post__info">
+                    <time pubdate datetime="2012-03-12">March 12, 2020</time>|
+                    by Ann Summers | Bedroom Furniture
+                  </p>
+
+                  <h3 class="post__title">
+                    Red selfies edison bulb four dollar toast humblebrag for the
+                    furniture
+                  </h3>
+
+                  <div class="post__text">
+                    <p>
+                      Everyday carry actually neutra authentic kogi shabby chic
+                      migas small batch craft beer. Literally williamsburg tote
+                      bag farm-to-table mustache ugh deep v irony. Af man bun
+                      copper mug iPhone enamel pin pug selvage hammock palo
+                      santo godard thundercats coloring book yuccie woke. Ugh
+                      pok pok taxidermy pabst enamel pin edison bulb
+                      farm-to-table. <br />
+                      Yuccie portland kickstarter, readymade ramps humblebrag
+                      ennui banjo mumblecore vaporware pickled cray stumptown
+                      8-bit mlkshk. Tumeric tousled austin, kinfolk scenester
+                      authentic craft beer truffaut irony intelligentsia YOLO
+                      lomo bushwick coloring book. Semiotics man bun venmo viral
+                      cliche. Tousled yr williamsburg austin edison bulb cloud
+                      bread vegan street art. Locavore food truck trust fund
+                      palo santo asymmetrical, franzen deep v marfa kogi
+                      whatever swag pop-up seitan.
+                    </p>
+
+                    <blockquote class="post__blockquote">
+                      <p class="post__blockquote-text">
+                        “Simplicity is not the goal. It is the by-product of a
+                        good idea and modest expectations”
+                      </p>
+                      <p class="post__blockquote-author">Paul Rand</p>
+                    </blockquote>
+
+                    <p>
+                      Af man bun copper mug iPhone enamel pin pug selvage
+                      hammock palo santo godard thundercats coloring book yuccie
+                      woke. Ugh pok pok taxidermy pabst enamel pin edison bulb
+                      farm-to-table. <br />
+                      Yuccie portland kickstarter, readymade ramps humblebrag
+                      ennui banjo mumblecore vaporware pickled cray stumptown
+                      8-bit mlkshk. Tumeric tousled austin, kinfolk scenester
+                      authentic craft beer truffaut irony intelligentsia YOLO
+                      lomo bushwick coloring book. Semiotics man bun venmo viral
+                      cliche. Tousled yr williamsburg austin edison bulb cloud
+                      bread vegan street art. Locavore food truck trust fund
+                      palo santo asymmetrical, franzen deep v marfa kogi
+                      whatever swag pop-up seitan.
+                    </p>
+                  </div>
+
+                  <div class="post__tags">
+                    <h5 class="post__tag-title">Tags</h5>
+                    <div class="post__tag-list">
+                      <button class="post__tag-btn">Bedroom furniture</button>
+                      <button class="post__tag-btn">Office furniture</button>
+                      <button class="post__tag-btn">
+                        Dining room futniture
+                      </button>
+                      <button class="post__tag-btn">Chair</button>
+                    </div>
+                  </div>
+                </article>
+
+                <section class="post__preview">
+                  <a class="post__preview-prev" href="">
+                    <img
+                      class="post__preview-img"
+                      src="./img/icons/prev_post.svg"
+                      alt="previous"
+                    />
+                    <p class="post__preview-text">
+                      Cred selfies edison bulb four dollar toast humblebrag
+                    </p>
+                  </a>
+
+                  <a class="post__preview-next" href="">
+                    <p class="post__preview-text">
+                      Semiotics fixie four dollar toast, next level
+                    </p>
+                    <img
+                      class="post__preview-img"
+                      src="./img/icons/next_post.svg"
+                      alt="previous"
+                    />
+                   
+                  </a>
+                </section>
+
+                <section class="comments">
+                  <h5 class="comments__title">Comments:</h5>
+                  <div class="comments__inner">
+                    <div class="comments__item">
+                      <img
+                        class="comments__avatar"
+                        src="./img/content/blog/avatar.jpg"
+                        alt="avatar"
+                      />
+                      <div class="comment__box">
+                        <div class="comments__name">Lea Brown</div>
+                        <time
+                          class="comments__date"
+                          pubdate
+                          datetime="2012-03-12"
+                          >March 12, 2020</time
+                        >
+                        <div class="comments__text">
+                          Tumeric tousled austin, kinfolk scenester authentic
+                          craft beer truffaut irony intelligentsia YOLO lomo
+                          bushwick coloring book. Semiotics man bun venmo viral
+                          cliche
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+
+                <section class="post">
+                  <h5 class="post__title">Post a comment</h5>
+
+                  <form class="post__comment" action="" method="post">
+                    <p>
+                      <textarea
+                        class="post__comment-textarea"
+                        placeholder="Your comment"
+                        name="comment"
+                      ></textarea>
+                    </p>
+
+                    <div class="post__comment-box">
+                      <input
+                        class="post__comment-input"
+                        type="text"
+                        name="name"
+                        id=""
+                        placeholder="Your name"
+                      />
+                      <input
+                        class="post__comment-input"
+                        type="email"
+                        name="email"
+                        id=""
+                        placeholder="Your e-mail"
+                      />
+                    </div>
+
+                    <button class="post__comment-btn" type="submit">
+                      Submit
+                    </button>
+                  </form>
+                </section>
+              </div>
+              @@include('blog__aside.html')
+            </div>
+          </div>
+        </section>
+      </main>
+      <!-- footer -->
+      @@include('_footer.html')
+    </div>
+
+    <script src="js/script.min.js"></script>
+  </body>
+</html>

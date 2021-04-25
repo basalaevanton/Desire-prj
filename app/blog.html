@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.min.css" />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <!-- header -->
+      <!-- header -->
+      <header class="header">
+        @@include('rs-menu.html')
+        <div class="container">
+          <div class="header__inner">
+            <nav class="menu">
+              <ul class="menu__list">
+                <li class="menu__list-item">
+                  <a class="menu__list-link" href="./about.html">About</a>
+                </li>
+                <li class="menu__list-item">
+                  <a class="menu__list-link" href="./gallery.html">Gallery</a>
+                </li>
+              </ul>
+            </nav>
+
+            <a class="logo" href="./index.html">
+              <img class="logo__img" src="./img/icons/logo.svg" alt="logo" />
+            </a>
+
+            <nav class="menu">
+              <ul class="menu__list">
+                <li class="menu__list-item menu__list-item--active">
+                  <a class="menu__list-link" href="./blog.html">Blog</a>
+                </li>
+                <li class="menu__list-item">
+                  <a class="menu__list-link" href="./contact.html">Contact</a>
+                </li>
+              </ul>
+            </nav>
+            <button class="header__btn-menu">
+              <img src="./img/icons/icon_rs-menu.svg" alt="icon menu" />
+            </button>
+          </div>
+        </div>
+      </header>
+      <main class="main">
+        <!--breadcrumbs  -->
+        <div class="breadcrumbs">
+          <div class="container">
+            <ul class="breadcrumbs__list">
+              <li class="breadcrumbs__item">
+                <a class="breadcrumbs__link" href="index.html">Home</a>
+              </li>
+              <li class="breadcrumbs__item">
+                <span class="breadcrumbs__link">Blog</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <section class="blog">
+          <div class="container">
+            <div class="blog__inner">
+              <div class="blog__content">
+                <article class="blog__item">
+                  <a class="blog__link-img" href="./blog__post.html">
+                    <img
+                      class="blog__img"
+                      src="./img/content/blog/img.jpg"
+                      alt="room"
+                    />
+                  </a>
+
+                  <p class="blog__item-info">
+                    <time pubdate datetime="2012-03-12">March 12, 2020</time>|
+                    by Ann Summers | Bedroom Furniture
+                  </p>
+                  <a href="./blog__post.html">
+                    <h3 class="blog__item-title">
+                      Red selfies edison bulb four dollar toast humblebrag for
+               blog__ta       the furniture
+                    </h3>
+                  </a>
+                  <p class="blog__item-text">
+                    Everyday carry actually neutra authentic kogi shabby chic
+                    migas small batch craft beer. Literally williamsburg tote
+                    bag farm-to-table mustache ugh deep v irony. Af man bun
+                    copper mug iPhone enamel pin pug selvage hammock palo santo
+                    godard thundercats coloring book yuccie woke. Ugh pok pok
+                    taxidermy pabst enamel pin edison bulb farm-to-table
+                  </p>
+                </article>
+
+                <blockquote class="blog__blockquote">
+                  <p class="blog__blockquote-text">
+                    “Simplicity is not the goal. It is the by-product of a good
+                    idea and modest expectations”
+                  </p>
+                  <p class="blog__blockquote-author">Paul Rand</p>
+                </blockquote>
+
+                <article class="blog__item">
+                  <a class="blog__link-img" href="./blog__post.html">
+                    <img
+                      class="blog__img"
+                      src="./img/content/blog/color_overlay.jpg"
+                      alt="room"
+                    />
+                  </a>
+
+                  <p class="blog__item-info">
+                    <time pubdate datetime="2012-03-12">March 12, 2020</time>| |
+                    by Lux Morningstar | Design
+                  </p>
+                  <a href="./blog__post.html">
+                    <h3 class="blog__item-title">Authentic kogi shabby chic</h3>
+                  </a>
+                  <p class="blog__item-text">
+                    Everyday carry actually neutra authentic kogi shabby chic
+                    migas small batch craft beer. Literally williamsburg tote
+                    bag farm-to-table mustache ugh deep v irony. Af man bun
+                    copper mug iPhone enamel pin pug selvage hammock palo santo
+                    godard thundercats coloring book yuccie woke. Ugh pok pok
+                    taxidermy pabst enamel pin edison bulb farm-to-table
+                  </p>
+                </article>
+
+                <article class="blog__item">
+                  <a class="blog__link-img" href="./blog__post.html">
+                    <img
+                      class="blog__img"
+                      src="./img/content/blog/slider.jpg"
+                      alt="room"
+                    />
+                  </a>
+
+                  <p class="blog__item-info">
+                    <time pubdate datetime="2012-03-12">March 12, 2020</time>|
+                    by Ann Summers | Table Furniture
+                  </p>
+                  <a href="./blog__post.html">
+                    <h3 class="blog__item-title">
+                      Semiotics fixie four dollar toast, next level woke
+                    </h3>
+                  </a>
+                  <p class="blog__item-text">
+                    Everyday carry actually neutra authentic kogi shabby chic
+                    migas small batch craft beer. Literally williamsburg tote
+                    bag farm-to-table mustache ugh deep v irony. Af man bun
+                    copper mug iPhone enamel pin pug selvage hammock palo santo
+                    godard thundercats coloring book yuccie woke. Ugh pok pok
+                    taxidermy pabst enamel pin edison bulb farm-to-table
+                  </p>
+                </article>
+
+                <div class="pagination">
+                  <div class="pagination__prev-disabled">
+                    <a class="pagination__prev-link" href="">
+                      <img
+                        class="pagination__prev"
+                        src="./img/icons/prev.svg"
+                        alt="next"
+                      />
+                    </a>
+                  </div>
+
+                  <div class="pagination__pages">
+                    <a class="pagination__page-active" href="">1</a>
+                    <a class="pagination__page" href="">2</a>
+                  </div>
+
+                  <div class="pagination__next">
+                    <a class="pagination__next-link" href="">
+                      <img
+                        class="pagination__next-icon"
+                        src="./img/icons/next.png"
+                        alt="next"
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              @@include('blog__aside.html')
+            </div>
+          </div>
+        </section>
+      </main>
+      <!-- footer -->
+      @@include('_footer.html')
+    </div>
+
+    <script src="js/script.min.js"></script>
+  </body>
+</html>
