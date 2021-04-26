@@ -81,7 +81,7 @@
                   <a href="./blog__post.html">
                     <h3 class="blog__item-title">
                       Red selfies edison bulb four dollar toast humblebrag for
-               blog__ta       the furniture
+                      blog__ta the furniture
                     </h3>
                   </a>
                   <p class="blog__item-text">
@@ -130,11 +130,38 @@
 
                 <article class="blog__item">
                   <a class="blog__link-img" href="./blog__post.html">
-                    <img
-                      class="blog__img"
-                      src="./img/content/blog/slider.jpg"
-                      alt="room"
-                    />
+                    <!-- Slider main container -->
+                    <div class="swiper-container">
+                      <!-- Additional required wrapper -->
+                      <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                          <img
+                            class="blog__img"
+                            src="./img/content/blog/slider.jpg"
+                            alt="room"
+                          />
+                        </div>
+                        <div class="swiper-slide">
+                          <img
+                            class="blog__img"
+                            src="./img/content/blog/slider.jpg"
+                            alt="room"
+                          />
+                        </div>
+                        <div class="swiper-slide">
+                          <img
+                            class="blog__img"
+                            src="./img/content/blog/slider.jpg"
+                            alt="room"
+                          />
+                        </div>
+                      </div>
+
+                      <!-- If we need navigation buttons -->
+                      <div class="swiper-button-prev"></div>
+                      <div class="swiper-button-next"></div>
+                    </div>
                   </a>
 
                   <p class="blog__item-info">
@@ -192,7 +219,8 @@
       <!-- footer -->
       @@include('_footer.html')
     </div>
-
-    <script src="js/script.min.js"></script>
+    <script type="module" src="js/script.js"></script>
+    <script src="js/mixitup.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
   </body>
 </html>

@@ -56,7 +56,7 @@
   &__form {
     display: flex;
     flex-direction: column;
-    padding-bottom: 80px;
+    padding-bottom: 35px;
   }
   &__form-item {
     display: flex;
@@ -99,4 +99,10 @@
     font-weight: 600;
     color: #fffff0;
   }
+}
+
+.swiper-pagination1{
+  display: flex;
+  justify-content: center;
+  padding-bottom: 15px;
 }

@@ -12,13 +12,11 @@ let path = {
   },
   app: {
     html: [source_folder + '/*.html', '!' + source_folder + '/_*.html'],
-    css: [
-      source_folder + '/scss/style.scss',
-    
-    ],
+    css: [source_folder + '/scss/style.scss'],
     js: [
       source_folder + '/js/script.js',
-   
+      'node_modules/mixitup/dist/mixitup.js',
+      'node_modules/swiper/swiper-bundle.js',
     ],
     img: source_folder + '/img/**/*.{jpg,png,svg,gif,ico,webp}',
     fonts: source_folder + '/fonts/*.ttf',
@@ -88,9 +86,11 @@ function styles() {
 function js() {
   return src(path.app.js)
     .pipe(fileinclude())
-    .pipe(babel({
-      presets: ["@babel/preset-env"]
-    }))
+    .pipe(
+      babel({
+        presets: ['@babel/preset-env'],
+      })
+    )
     .pipe(dest(path.build.js))
     .pipe(uglify())
     .pipe(

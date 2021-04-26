@@ -112,7 +112,7 @@
                   <a href="./blog__post.html">
                     <h3 class="blog__item-title">
                       Red selfies edison bulb four dollar toast humblebrag for
-               blog__ta       the furniture
+                      blog__ta the furniture
                     </h3>
                   </a>
                   <p class="blog__item-text">
@@ -161,11 +161,38 @@
 
                 <article class="blog__item">
                   <a class="blog__link-img" href="./blog__post.html">
-                    <img
-                      class="blog__img"
-                      src="./img/content/blog/slider.jpg"
-                      alt="room"
-                    />
+                    <!-- Slider main container -->
+                    <div class="swiper-container">
+                      <!-- Additional required wrapper -->
+                      <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                          <img
+                            class="blog__img"
+                            src="./img/content/blog/slider.jpg"
+                            alt="room"
+                          />
+                        </div>
+                        <div class="swiper-slide">
+                          <img
+                            class="blog__img"
+                            src="./img/content/blog/slider.jpg"
+                            alt="room"
+                          />
+                        </div>
+                        <div class="swiper-slide">
+                          <img
+                            class="blog__img"
+                            src="./img/content/blog/slider.jpg"
+                            alt="room"
+                          />
+                        </div>
+                      </div>
+
+                      <!-- If we need navigation buttons -->
+                      <div class="swiper-button-prev"></div>
+                      <div class="swiper-button-next"></div>
+                    </div>
                   </a>
 
                   <p class="blog__item-info">
@@ -259,14 +286,14 @@
 
         <ul class="aside__posts-list">
           <li class="aside__posts-item">
-            <a class="aside__posts-link" href="#">
+            <a class="aside__posts-link" href="./blog__post.html">
               Cred selfies edison bulb four dollar toast humblebrag
             </a> <br>
             <time class="aside__posts-date" pubdate datetime="2020-08-10">August 10, 2020 </time>
             <a class="aside__posts-author" href="#">| by Ann Summers </a>
           </li>
           <li class="aside__posts-item">
-            <a class="aside__posts-link" href="#">
+            <a class="aside__posts-link" href="./blog__post.html">
               Semiotics fixie four dollar toast, next level woke scenester
               direct trade photo booth
             </a><br>
@@ -274,7 +301,7 @@
             <a class="aside__posts-author" href="#">| by Ann Summers </a>
           </li>
           <li class="aside__posts-item">
-            <a class="aside__posts-link" href="#">
+            <a class="aside__posts-link" href="./blog__post.html">
               Cred selfies edison bulb four dollar toast humblebrag
             </a><br>
             <time class="aside__posts-date" pubdate datetime="2020-08-15">August 15, 2020 </time>
@@ -467,7 +494,8 @@
 </footer>
 
     </div>
-
-    <script src="js/script.min.js"></script>
+    <script type="module" src="js/script.js"></script>
+    <script src="js/mixitup.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
   </body>
 </html>

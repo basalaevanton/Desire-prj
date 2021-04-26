@@ -24,11 +24,11 @@
                 </li>
               </ul>
             </nav>
-      
+
             <a class="logo" href="./index.html">
               <img class="logo__img" src="./img/icons/logo.svg" alt="logo" />
             </a>
-      
+
             <nav class="menu">
               <ul class="menu__list">
                 <li class="menu__list-item">
@@ -42,17 +42,61 @@
             <button class="header__btn-menu">
               <img src="./img/icons/icon_menu.png" alt="icon menu" />
             </button>
-      
+
             <!-- icon_rs-menu.svg -->
           </div>
         </div>
       </header>
       <main class="main">
         <!-- Slider main container -->
-        <div class="swiper-container">
+        <div class="swiper-index">
           <!-- Additional required wrapper -->
           <div class="swiper-wrapper">
             <!-- Slides -->
+            <div class="swiper-slide">
+              <div class="slide__background">
+                <div class="container">
+                  <div class="slide">
+                    <img
+                      class="slide__img"
+                      src="./img/content/main/slide__img.png"
+                      alt="chair"
+                    />
+                    <div class="slide__content">
+                      <h2 class="slide__content-title">Furniture collection</h2>
+                      <p class="slide__content-text">
+                        Deep v you probably haven't heard of them banh mi synth
+                        actually affogato. Aesthetic lyft ethical drinking
+                        vinegar austint
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="slide__background">
+                <div class="container">
+                  <div class="slide">
+                    <img
+                      class="slide__img"
+                      src="./img/content/main/slide__img.png"
+                      alt="chair"
+                    />
+                    <div class="slide__content">
+                      <h2 class="slide__content-title">Furniture collection</h2>
+                      <p class="slide__content-text">
+                        Deep v you probably haven't heard of them banh mi synth
+                        actually affogato. Aesthetic lyft ethical drinking
+                        vinegar austint
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
             <div class="swiper-slide">
               <div class="slide__background">
                 <div class="container">
@@ -285,10 +329,114 @@
                   alt="image"
                 />
               </div>
+              <div class="gallery__items mix living">
+                <img
+                  class="gallery__item"
+                  src="./img/content/main/placeholder1.jpg"
+                  alt="image"
+                />
+                <img
+                  class="gallery__item"
+                  src="./img/content/main/placeholder5.jpg"
+                  alt="image"
+                />
+                <img
+                  class="gallery__item"
+                  src="./img/content/main/placeholder2.jpg"
+                  alt="image"
+                />
+                <img
+                  class="gallery__item"
+                  src="./img/content/main/placeholder4.jpg"
+                  alt="image"
+                />
+                <img
+                  class="gallery__item"
+                  src="./img/content/main/placeholder3.jpg"
+                  alt="image"
+                />
+              </div>
+              <div class="gallery__items mix office">
+                <img
+                  class="gallery__item"
+                  src="./img/content/main/placeholder1.jpg"
+                  alt="image"
+                />
+                <img
+                  class="gallery__item"
+                  src="./img/content/main/placeholder2.jpg"
+                  alt="image"
+                />
+                <img
+                  class="gallery__item"
+                  src="./img/content/main/placeholder3.jpg"
+                  alt="image"
+                />
+                <img
+                  class="gallery__item"
+                  src="./img/content/main/placeholder4.jpg"
+                  alt="image"
+                />
+           
+              </div>
+              <div class="gallery__items mix dining">
+                <img
+                  class="gallery__item"
+                  src="./img/content/main/placeholder1.jpg"
+                  alt="image"
+                />
+                <img
+                  class="gallery__item"
+                  src="./img/content/main/placeholder2.jpg"
+                  alt="image"
+                />
+                <img
+                  class="gallery__item"
+                  src="./img/content/main/placeholder3.jpg"
+                  alt="image"
+                />
+                <img
+                  class="gallery__item"
+                  src="./img/content/main/placeholder4.jpg"
+                  alt="image"
+                />
+                <img
+                  class="gallery__item"
+                  src="./img/content/main/placeholder5.jpg"
+                  alt="image"
+                />
+              </div>
+              <div class="gallery__items mix chair">
+                <img
+                  class="gallery__item"
+                  src="./img/content/main/placeholder1.jpg"
+                  alt="image"
+                />
+                <img
+                  class="gallery__item"
+                  src="./img/content/main/placeholder2.jpg"
+                  alt="image"
+                />
+                <!-- <img
+                  class="gallery__item"
+                  src="./img/content/main/placeholder3.jpg"
+                  alt="image"
+                /> -->
+                <img
+                  class="gallery__item"
+                  src="./img/content/main/placeholder4.jpg"
+                  alt="image"
+                />
+                <img
+                  class="gallery__item"
+                  src="./img/content/main/placeholder5.jpg"
+                  alt="image"
+                />
+              </div>
             </div>
           </div>
         </div>
-<!-- BlogMain -->
+        <!-- BlogMain -->
         <section class="BlogMain">
           <div class="container">
             <h4 class="BlogMain__title">More inspiration ideas in our blog</h4>
@@ -341,7 +489,8 @@
       <!-- footer -->
       @@include('_footer.html')
     </div>
-
     <script type="module" src="js/script.js"></script>
+    <script src="js/mixitup.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
   </body>
 </html>
