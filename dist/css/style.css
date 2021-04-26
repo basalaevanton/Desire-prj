@@ -5,9 +5,7 @@
 .collection__gallery-title,
 .brocher__title,
 .stages__title,
-.stages__diagramma-title,
 .BlogMain__title,
-.BlogMain__item-title,
 .about__title,
 .about__item-title,
 .inspiration__title,
@@ -179,6 +177,12 @@ body {
   margin: 0 10px;
 }
 
+.swiper-container-horizontal>.swiper-pagination-bullets,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  bottom: auto;
+}
+
 .swiper-pagination-bullet {
   width: 8px;
   height: 8px;
@@ -245,14 +249,14 @@ body {
 
 .collection {
   padding-top: 45px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
 }
 
 .collection__box {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
   width: 730px;
+  margin: 0 auto;
   padding-bottom: 50px;
 }
 
@@ -335,7 +339,6 @@ body {
   background-image: url(..//img/content/main/Mask.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-size: 100% 100%;
   margin-top: 100px;
   margin-bottom: 90px;
   background-color: rgba(255,255,255,0.7);
@@ -428,6 +431,9 @@ body {
 }
 
 .stages__diagramma-title {
+  font-family: Montserrat;
+  font-weight: bold;
+  color: #363838;
   font-size: 16px;
   line-height: 23px;
 }
@@ -493,6 +499,7 @@ body {
 }
 
 .BlogMain__title {
+  width: 100%;
   font-size: 36px;
   line-height: 51px;
   width: 430px;
@@ -507,7 +514,7 @@ body {
 }
 
 .BlogMain__item {
-  width: 50%;
+  width: 49%;
 }
 
 .BlogMain__info {
@@ -518,6 +525,9 @@ body {
 }
 
 .BlogMain__item-title {
+  font-family: Montserrat;
+  font-weight: bold;
+  color: #363838;
   font-size: 24px;
   line-height: 38px;
 }
@@ -1360,6 +1370,14 @@ body {
   background-color: rgba(255,239,53,0.5);
 }
 
+.header__btn-burger {
+  display: none;
+  background: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
 .logo {
   margin: 0 auto;
 }
@@ -1482,15 +1500,15 @@ body {
   color: #fffff0;
 }
 
-.footer__social-list,
-.footer__navigation-list {
+.footer__social,
+.footer__navigation {
   display: flex;
   flex-direction: column;
-  margin-left: 100px;
+  padding-left: 125px;
 }
 
-.footer__navigation-list {
-  margin-left: 175px;
+.footer__navigation {
+  padding-left: 175px;
 }
 
 .footer__social-item,
@@ -1546,7 +1564,7 @@ body {
 }
 
 .rs-menu.rs-menu--close {
-  transform: translateX(500%);
+  display: none;
 }
 
 .rs-menu__close {
@@ -1611,7 +1629,7 @@ body {
 
 .breadcrumbs {
   position: relative;
-  z-index: 999;
+  z-index: 10;
   background: rgba(223,223,223,0.5);
   padding: 13px 0 14px;
 }
@@ -1619,12 +1637,17 @@ body {
 .breadcrumbs__list {
   display: flex;
   align-items: center;
+  overflow-x: auto;
+}
+
+.breadcrumbs__item {
+  position: relative;
+  padding-right: 8px;
 }
 
 .breadcrumbs__item::after {
   content: '/';
-  margin-left: -4px;
-  margin-right: 4px;
+  position: absolute;
 }
 
 .breadcrumbs__item:last-child::after {
@@ -1634,4 +1657,353 @@ body {
 .breadcrumbs__link {
   font-size: 14px;
   color: #5a5a5a;
+}
+
+@media (max-width: 1350px) {
+  .collection__gallery-title {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .slide__img {
+    height: 640px;
+  }
+
+  .slide__content-title {
+    font-size: 62px;
+    line-height: 74px;
+  }
+
+  .collection__gallery {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .gl5 {
+    display: none;
+  }
+
+  .brocher {
+    margin-top: 15px;
+    height: 325px;
+    margin-bottom: 45px;
+  }
+
+  .brocher__title {
+    padding-top: 25px;
+  }
+
+  .stages__diagramma {
+    padding-left: 15px;
+  }
+}
+
+@media (max-width: 990px) {
+  .footer__contact {
+    width: 380px;
+  }
+
+  .footer__navigation {
+    padding-left: 75px;
+  }
+
+  .collection__gallery {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .collection__box {
+    width: auto;
+  }
+
+  .collection__gallery-title {
+    font-size: 18px;
+  }
+
+  .gl4 {
+    display: none;
+  }
+
+  .stages__diagramma-measur {
+    margin-left: 160px;
+  }
+
+  .stages__diagramma-item--production {
+    margin-left: 170px;
+  }
+
+  .gallery__buttons {
+    padding: 40px 0 5px 0;
+    flex-wrap: wrap;
+  }
+
+  .gallery__btn {
+    margin-bottom: 15px;
+  }
+
+  .BlogMain__item-title {
+    font-size: 20px;
+    line-height: 32px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header__btn-menu {
+    display: none;
+  }
+
+  .menu {
+    padding: 0;
+  }
+
+  .menu__list-item {
+    margin-left: 0;
+  }
+
+  .menu__list-item+.menu__list-item {
+    margin-right: 0;
+  }
+
+  .logo {
+    margin: 0 5px;
+  }
+
+  .footer__inner {
+    flex-wrap: wrap;
+    padding: 30px 0 15px;
+  }
+
+  .footer__contact {
+    width: 100%;
+    padding-bottom: 20px;
+  }
+
+  .footer__contact-text {
+    width: 100%;
+  }
+
+  .footer__social,
+  .footer__navigation {
+    padding-left: 0px;
+    margin: auto;
+  }
+
+  .footer__copyright {
+    height: 60px;
+    padding: 15px;
+  }
+
+  .collection__gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .gl4 {
+    display: flex;
+  }
+
+  .brocher {
+    margin-top: 30px;
+  }
+
+  .BlogMain {
+    padding-bottom: 0px;
+  }
+
+  .BlogMain__items {
+    flex-wrap: wrap;
+  }
+
+  .BlogMain__item {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 25px;
+  }
+
+  .BlogMain__img {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 540px) {
+  .slide__content-title,
+  .collection__title,
+  .collection__gallery-title,
+  .brocher__title,
+  .stages__title,
+  .BlogMain__title,
+  .about__title,
+  .about__item-title,
+  .inspiration__title,
+  .inspiration__skills-item,
+  .aside__title,
+  .blog__item-title,
+  .blog__blockquote-author,
+  .post__title,
+  .post__blockquote-author,
+  .post__tag-title,
+  .comments__title,
+  .comments__name,
+  .contact__title,
+  .menu__list-link,
+  .footer__contact-title,
+  .rs-menu__title {
+    font-size: 28px;
+    line-height: 36px;
+    width: auto;
+  }
+
+  .header__inner {
+    flex-wrap: wrap;
+  }
+
+  .menu {
+    padding-right: 0;
+    width: 100%;
+    background: #fff;
+    position: relative;
+    text-align: center;
+    z-index: 11;
+    transform: translateY(-300px);
+    transition: all 0.5s;
+  }
+
+  .menu--open {
+    transform: translateY(30px);
+  }
+
+  .menu__list {
+    display: block;
+  }
+
+  .menu__list-item {
+    margin-right: 0;
+  }
+
+  .menu__list-item--active::after {
+    display: none;
+  }
+
+  .menu__list-link {
+    display: block;
+    padding: 10px 0;
+  }
+
+  .logo {
+    order: -1;
+  }
+
+  .header__btn-burger {
+    display: block;
+    order: -1;
+    z-index: 12;
+  }
+
+  .collection__gallery {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .gl5 {
+    display: flex;
+  }
+
+  .collection__gallery-title {
+    font-size: 18px;
+  }
+
+  .brocher {
+    height: 250px;
+    margin-bottom: 20px;
+  }
+
+  .stages__diagramma-item--production {
+    margin-left: 75px;
+  }
+
+  .stages__diagramma-measur {
+    margin-left: 80px;
+  }
+
+  .stages__diagramma-item {
+    width: auto;
+  }
+
+  .stages__diagramma-text {
+    display: none;
+  }
+
+  .gallery__buttons {
+    padding: 40px 0 5px 0;
+    flex-wrap: wrap;
+  }
+
+  .gallery__btn {
+    width: 90px;
+    height: auto;
+    font-size: 12px;
+    line-height: 20px;
+    padding: 5px;
+  }
+
+  .gallery__items {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .gallery__item:first-child {
+    display: none;
+  }
+
+  .BlogMain {
+    padding-top: 25px;
+  }
+}
+
+@media (max-width: 370px) {
+  .slide__content-title,
+  .collection__title,
+  .collection__gallery-title,
+  .brocher__title,
+  .stages__title,
+  .BlogMain__title,
+  .about__title,
+  .about__item-title,
+  .inspiration__title,
+  .inspiration__skills-item,
+  .aside__title,
+  .blog__item-title,
+  .blog__blockquote-author,
+  .post__title,
+  .post__blockquote-author,
+  .post__tag-title,
+  .comments__title,
+  .comments__name,
+  .contact__title,
+  .menu__list-link,
+  .footer__contact-title,
+  .rs-menu__title {
+    font-size: 24px;
+    line-height: 30px;
+    width: auto;
+  }
+
+  .collection__gallery-title {
+    font-size: 20px;
+  }
+
+  .stages__diagramma-item--production {
+    margin-left: 75px;
+  }
+
+  .stages__diagramma-measur {
+    margin-left: 80px;
+  }
+
+  .stages__diagramma-item {
+    width: auto;
+  }
+
+  .footer__copyright {
+    padding: 0 15px;
+  }
 }

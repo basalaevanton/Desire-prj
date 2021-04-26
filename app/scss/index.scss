@@ -4,6 +4,11 @@
   .swiper-pagination-bullet {
   margin: 0 10px;
 }
+.swiper-container-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  bottom: auto;
+}
 
 .swiper-pagination-bullet {
   width: 8px;
@@ -28,6 +33,7 @@
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
+ 
 
   &__background {
     height: 722px;
@@ -75,13 +81,15 @@
 // collection
 
 .collection {
+
   padding-top: 45px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
+ 
   &__box {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
     width: 730px;
+    margin: 0 auto;
     padding-bottom: 50px;
   }
   &__title {
@@ -169,7 +177,8 @@
   background-repeat: no-repeat;
   background-size: cover;
 
-  background-size: 100% 100%;
+  // background-size: 100% 100%;
+
   margin-top: 100px;
   margin-bottom: 90px;
 
@@ -270,7 +279,10 @@
   }
 
   &__diagramma-title {
-    @extend %title-font;
+    font-family: Montserrat;
+    font-weight: bold;
+  
+    color: #363838;
     font-size: 16px;
     line-height: 23px;
   }
@@ -337,6 +349,7 @@
 
   &__title {
     @extend %title-font;
+width: 100%;
     font-size: 36px;
     line-height: 51px;
     width: 430px;
@@ -351,7 +364,7 @@
   }
 
   &__item {
-    width: 50%;
+    width: 49%;
   }
 
   &__info {
@@ -362,7 +375,10 @@
   }
 
   &__item-title {
-    @extend %title-font;
+    font-family: Montserrat;
+    font-weight: bold;
+  
+    color: #363838;
     font-size: 24px;
     line-height: 38px;
   }

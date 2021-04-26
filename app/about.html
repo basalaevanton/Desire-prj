@@ -11,7 +11,7 @@
     <div class="wrapper">
       <!-- header -->
       <header class="header">
-        @@include('rs-menu.html')
+   
         <div class="container">
           <div class="header__inner">
             <nav class="menu">
@@ -42,6 +42,11 @@
             <button class="header__btn-menu">
               <img src="./img/icons/icon_rs-menu.svg" alt="icon menu" />
             </button>
+            <button class="header__btn-burger">
+              <img src="./img/icons/icon_menu_burger.png" alt="icon menu" />
+            </button>
+
+            @@include('rs-menu.html')
           </div>
         </div>
       </header>
@@ -289,7 +294,8 @@
       <!-- footer -->
       @@include('_footer.html')
     </div>
-
-    <script src="js/script.min.js"></script>
+    <script type="module" src="js/script.js"></script>
+    <script src="js/mixitup.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
   </body>
 </html>
