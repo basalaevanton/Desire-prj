@@ -2,8 +2,12 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>DESIRE BLOG</title>
+    <link rel="icon" href="./img/icons/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="css/style.min.css" />
   </head>
 
@@ -12,7 +16,6 @@
       <!-- header -->
       <!-- header -->
       <header class="header">
-        @@include('rs-menu.html')
         <div class="container">
           <div class="header__inner">
             <nav class="menu">
@@ -43,6 +46,11 @@
             <button class="header__btn-menu">
               <img src="./img/icons/icon_rs-menu.svg" alt="icon menu" />
             </button>
+            <button class="header__btn-burger">
+              <img src="./img/icons/icon_menu_burger.png" alt="icon menu" />
+            </button>
+
+            @@include('rs-menu.html')
           </div>
         </div>
       </header>

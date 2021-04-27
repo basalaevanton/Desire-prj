@@ -2,8 +2,12 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>DESIRE ABOUT</title>
+    <link rel="icon" href="./img/icons/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="css/style.min.css" />
   </head>
 
@@ -11,7 +15,6 @@
     <div class="wrapper">
       <!-- header -->
       <header class="header">
-        @@include('rs-menu.html')
         <div class="container">
           <div class="header__inner">
             <nav class="menu">
@@ -42,6 +45,11 @@
             <button class="header__btn-menu">
               <img src="./img/icons/icon_rs-menu.svg" alt="icon menu" />
             </button>
+            <button class="header__btn-burger">
+              <img src="./img/icons/icon_menu_burger.png" alt="icon menu" />
+            </button>
+
+            @@include('rs-menu.html')
           </div>
         </div>
       </header>
@@ -110,6 +118,7 @@
           <div class="container-fluid">
             <div class="inspiration__inner">
               <img
+                class="inspiration__img"
                 src="./img/content/about/Green_chair.png"
                 alt="Green_chair"
               />
@@ -209,7 +218,7 @@
 
         <!-- furniture collection -->
         <div class="collection__gallery">
-          <div class="collection__gallery-item">
+          <div class="collection__gallery-item gl1">
             <div class="collection__gallery-content">
               <h6 class="collection__gallery-title">
                 Truffaut literally trust
@@ -224,7 +233,7 @@
               alt="furniture"
             />
           </div>
-          <div class="collection__gallery-item">
+          <div class="collection__gallery-item gl2">
             <div class="collection__gallery-content">
               <h6 class="collection__gallery-title">
                 Truffaut literally trust
@@ -239,7 +248,7 @@
               alt="furniture"
             />
           </div>
-          <div class="collection__gallery-item">
+          <div class="collection__gallery-item gl3">
             <div class="collection__gallery-content">
               <h6 class="collection__gallery-title">
                 Truffaut literally trust
@@ -254,7 +263,7 @@
               alt="furniture"
             />
           </div>
-          <div class="collection__gallery-item">
+          <div class="collection__gallery-item gl4">
             <div class="collection__gallery-content">
               <h6 class="collection__gallery-title">
                 Truffaut literally trust
@@ -269,7 +278,7 @@
               alt="furniture"
             />
           </div>
-          <div class="collection__gallery-item">
+          <div class="collection__gallery-item gl5">
             <div class="collection__gallery-content">
               <h6 class="collection__gallery-title">
                 Truffaut literally trust
@@ -289,7 +298,8 @@
       <!-- footer -->
       @@include('_footer.html')
     </div>
-
-    <script src="js/script.min.js"></script>
+    <script type="module" src="js/script.js"></script>
+    <script src="js/mixitup.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
   </body>
 </html>

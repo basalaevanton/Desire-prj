@@ -1,3 +1,5 @@
+
+
 .contact {
   padding-top: 30px;
   &__title {
@@ -81,7 +83,7 @@
   }
   &__form-textarea {
     padding-top: 10px;
-    width: 825px;
+    width: 100%;
     min-height: 125px;
     resize: vertical;
   }
@@ -101,7 +103,7 @@
   }
 }
 
-.swiper-pagination1{
+.swiper-pagination1 {
   display: flex;
   justify-content: center;
   padding-bottom: 15px;

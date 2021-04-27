@@ -2,8 +2,12 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>DESIRE SINGLE POST</title>
+    <link rel="icon" href="./img/icons/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="css/style.min.css" />
   </head>
 
@@ -12,38 +16,6 @@
       <!-- header -->
       <!-- header -->
       <header class="header">
-              <!-- rightside menu -->
-    
-      <div class="rs-menu rs-menu--close">
-        <button class="rs-menu__close">
-          <img src="./img/icons/Path.svg" alt="path" />
-        </button>
-    
-        <div class="rs-menu__inner">
-          <a class="rs-menu__logo" href="./index.html">
-            <img class="logo__img" src="./img/icons/logo-big.svg" alt="logo" />
-          </a>
-          <section class="rs-menu__section">
-            <h4 class="rs-menu__title">Furniture for life</h4>
-            <p class="rs-menu__text">
-              Sustainable hot chicken skateboard, dreamcatcher meggings actually
-              squid. Slow-carb everyday carry +1 art party microdosing, put a
-              bird on it brooklyn
-            </p>
-            <img
-              class="rs-menu__img"
-              src="./img/content/rs-menu_chair.jpg"
-              alt="chair"
-            />
-          </section>
-        
-      </div>
-    </div>
-
-
-
-
-    
         <div class="container">
           <div class="header__inner">
             <nav class="menu">
@@ -74,6 +46,39 @@
             <button class="header__btn-menu">
               <img src="./img/icons/icon_rs-menu.svg" alt="icon menu" />
             </button>
+            <button class="header__btn-burger">
+              <img src="./img/icons/icon_menu_burger.png" alt="icon menu" />
+            </button>
+
+            <!-- rightside menu -->
+
+<div class="rs-menu rs-menu--close">
+  <div class="rs-menu__box">
+    <button class="rs-menu__close">
+      <img src="./img/icons/Path.svg" alt="path" />
+    </button>
+
+    <div class="rs-menu__inner">
+      <a class="rs-menu__logo" href="./index.html">
+        <img class="logo__img" src="./img/icons/logo-big.svg" alt="logo" />
+      </a>
+      <section class="rs-menu__section">
+        <h4 class="rs-menu__title">Furniture for life</h4>
+        <p class="rs-menu__text">
+          Sustainable hot chicken skateboard, dreamcatcher meggings actually
+          squid. Slow-carb everyday carry +1 art party microdosing, put a bird
+          on it brooklyn
+        </p>
+        <img
+          class="rs-menu__img"
+          src="./img/content/rs-menu_chair.jpg"
+          alt="chair"
+        />
+      </section>
+    </div>
+  </div>
+</div>
+
           </div>
         </div>
       </header>
@@ -196,7 +201,6 @@
                       src="./img/icons/next_post.svg"
                       alt="previous"
                     />
-                   
                   </a>
                 </section>
 
@@ -266,7 +270,6 @@
               <aside class="aside">
   <div class="container">
     <div class="aside__inner">
-
       <form class="aside__search">
         <input
           class="aside__search-input"
@@ -309,23 +312,30 @@
           <li class="aside__posts-item">
             <a class="aside__posts-link" href="./blog__post.html">
               Cred selfies edison bulb four dollar toast humblebrag
-            </a> <br>
-            <time class="aside__posts-date" pubdate datetime="2020-08-10">August 10, 2020 </time>
+            </a>
+            <br />
+            <time class="aside__posts-date" pubdate datetime="2020-08-10"
+              >August 10, 2020
+            </time>
             <a class="aside__posts-author" href="#">| by Ann Summers </a>
           </li>
           <li class="aside__posts-item">
             <a class="aside__posts-link" href="./blog__post.html">
               Semiotics fixie four dollar toast, next level woke scenester
-              direct trade photo booth
-            </a><br>
-            <time class="aside__posts-date" pubdate datetime="2020-08-20">August 20, 2020 </time>
+              direct trade photo booth </a
+            ><br />
+            <time class="aside__posts-date" pubdate datetime="2020-08-20"
+              >August 20, 2020
+            </time>
             <a class="aside__posts-author" href="#">| by Ann Summers </a>
           </li>
           <li class="aside__posts-item">
             <a class="aside__posts-link" href="./blog__post.html">
-              Cred selfies edison bulb four dollar toast humblebrag
-            </a><br>
-            <time class="aside__posts-date" pubdate datetime="2020-08-15">August 15, 2020 </time>
+              Cred selfies edison bulb four dollar toast humblebrag </a
+            ><br />
+            <time class="aside__posts-date" pubdate datetime="2020-08-15"
+              >August 15, 2020
+            </time>
             <a class="aside__posts-author" href="#">| by Ann Summers </a>
           </li>
         </ul>
@@ -431,6 +441,7 @@
             <button class="footer__form-btn" type="submit">Send</button>
           </form>
         </section>
+
         <div class="footer__social">
           <ul class="footer__social-list">
             <li class="footer__social-item">
@@ -487,7 +498,7 @@
           </ul>
         </div>
 
-        <div class="footer__navigation">
+        <nav class="footer__navigation">
           <ul class="footer__navigation-list">
             <li class="footer__navigation-item">
               <a href="#" class="footer__navigation-link">Delivery</a>
@@ -502,7 +513,7 @@
               <a href="#" class="footer__navigation-link">More About Us</a>
             </li>
           </ul>
-        </div>
+        </nav>
       </div>
     </div>
   </div>
@@ -515,7 +526,8 @@
 </footer>
 
     </div>
-
-    <script src="js/script.min.js"></script>
+    <script type="module" src="js/script.js"></script>
+    <script src="js/mixitup.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
   </body>
 </html>
