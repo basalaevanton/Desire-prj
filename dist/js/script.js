@@ -9,13 +9,13 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
 // rs menu animation
 var btnmenu = document.querySelector('.header__btn-menu');
 var close = document.querySelector('.rs-menu__close');
-var rsMenu = document.querySelector('.rs-menu');
-var wrapper = document.querySelector('.wrapper');
+var rsMenu_bg = document.querySelector('.rs-menu');
+var rsMenu = document.querySelector('.rs-menu__box');
 
 function listener() {
-  document.addEventListener('mousedown', function (event) {
+  rsMenu_bg.addEventListener('mousedown', function (event) {
     if (!rsMenu.contains(event.target)) {
-      rsMenu.classList.add('rs-menu--close');
+      rsMenu_bg.classList.add('rs-menu--close');
     }
   });
 }
@@ -23,11 +23,11 @@ function listener() {
 listener();
 
 btnmenu.onclick = function removeClass() {
-  rsMenu.classList.remove('rs-menu--close');
+  rsMenu_bg.classList.remove('rs-menu--close');
 };
 
 close.onclick = function addClass() {
-  rsMenu.classList.add('rs-menu--close');
+  rsMenu_bg.classList.add('rs-menu--close');
 }; // burger menu
 
 
@@ -86,23 +86,7 @@ var mixer = mixitup('.gallery__inner', {
   animation: {
     duration: 300
   }
-}); // if (window.matchMedia('(max-width: 990px)').matches) {
-//   let bbb = document.querySelectorAll('.gallery__btn');
-//   let mas = [];
-//   for (let index of bbb) {
-//     mas.push(index.innerText);
-//   }
-//   for (let index in mas) {
-//     mas[index] = mas[index].split(' ')[0];
-//   }
-//   let i = 0;
-//   for (let index of bbb) {
-//     index.innerText = mas[i];
-//     i++;
-//   }
-// } else {
-//   console.log('byyye');
-// }
+}); // change btns value @media
 
 var mediaQuery = window.matchMedia('(max-width: 768px)');
 var gallery__btn = document.querySelectorAll('.gallery__btn');
@@ -178,9 +162,7 @@ function handleTabletChange(e) {
       _iterator5.f();
     }
   }
-} // Register event listener
+}
 
-
-mediaQuery.addListener(handleTabletChange); // Initial check
-
-handleTabletChange(mediaQuery);
+mediaQuery.addListener(handleTabletChange);
+handleTabletChange(mediaQuery); ///
