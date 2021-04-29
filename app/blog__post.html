@@ -72,7 +72,7 @@
           </div>
         </div>
         <!-- blog -->
-        <section class="blog">
+        <div class="blog">
           <div class="container">
             <div class="blog__inner">
               <div class="blog__content">
@@ -85,8 +85,8 @@
                   />
 
                   <p class="post__info">
-                    <time pubdate datetime="2012-03-12">March 12, 2020</time>|
-                    by Ann Summers | Bedroom Furniture
+                    <time datetime="2012-03-12">March 12, 2020</time>| by Ann
+                    Summers | Bedroom Furniture
                   </p>
 
                   <h3 class="post__title">
@@ -152,7 +152,7 @@
                   </div>
                 </article>
 
-                <section class="post__preview">
+                <div class="post__preview">
                   <a class="post__preview-prev" href="">
                     <img
                       class="post__preview-img"
@@ -174,7 +174,7 @@
                       alt="previous"
                     />
                   </a>
-                </section>
+                </div>
 
                 <section class="comments">
                   <h5 class="comments__title">Comments:</h5>
@@ -187,10 +187,7 @@
                       />
                       <div class="comment__box">
                         <div class="comments__name">Lea Brown</div>
-                        <time
-                          class="comments__date"
-                          pubdate
-                          datetime="2012-03-12"
+                        <time class="comments__date" datetime="2012-03-12"
                           >March 12, 2020</time
                         >
                         <div class="comments__text">
@@ -207,7 +204,7 @@
                 <section class="post">
                   <h5 class="post__title">Post a comment</h5>
 
-                  <form class="post__comment" action="" method="post">
+                  <form class="post__comment" action="url" method="post">
                     <p>
                       <textarea
                         class="post__comment-textarea"
@@ -221,14 +218,12 @@
                         class="post__comment-input"
                         type="text"
                         name="name"
-                        id=""
                         placeholder="Your name"
                       />
                       <input
                         class="post__comment-input"
                         type="email"
                         name="email"
-                        id=""
                         placeholder="Your e-mail"
                       />
                     </div>
@@ -242,7 +237,7 @@
               @@include('blog__aside.html')
             </div>
           </div>
-        </section>
+        </div>
       </main>
       <!-- footer -->
       @@include('_footer.html')
