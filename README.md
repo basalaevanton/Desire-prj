@@ -1,7 +1,11 @@
-# Desire-prj
-верстка сайта по макету с использованием Gulp, scss, swiper, mixitup, js.
+# Desire - https://basalaevanton.github.io/Desire.github.io/
 
+### В проекте используются следующие технологии:
 
+- Gulp
+- JavaScript
+- Scss
+- mixitup
+- Bem
+- 
 
-link to project
-https://basalaevanton.github.io/Desire.github.io/
